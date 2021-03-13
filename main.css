@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800');
+
+body {
+    background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+}
+
+* {
+	user-select: none;
+}
+
+#background, #background-overlay {
+    position: fixed;
+    left: 0;
+    top: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+}
+
+#background {
+    background-size: contain;
+    z-index: 1;
+}
+
+#background-overlay {
+    background-color: rgba(1,1,1,.7);
+    z-index: 2;
+}
+
+#main-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 3;
+}
+
+#main-container h1 {
+  font-size: 75px;
+  font-family: Open Sans;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-shadow: 2px 1px 5px #000;
+  color: #eaeaea;
+}
+
+#main-container h2 {
+  font-size: 15px;
+  font-weight: 300;
+  font-family: Open Sans;
+  text-shadow: 2px 1px 5px #000;
+  color: #eaeaea;
+  line-height: 35px;
+  white-space: nowrap;
+}
+
+#main-container a {
+  text-decoration: none;
+  color: #bfbfbf;
+  font-weight: 500;
+  font-family: Open Sans;
+  font-size: 15px;
+  transition: 0.25s;
+}
+
+#main-container a:hover {
+  transition: 0.25s;
+  color: #fff;
+  font-size: 15.5px;
+  text-shadow: 0 0 5px #fff;
+}
+
+#main-container i {
+  font-size: 18px;
+}
+
+@media screen and (max-width: 650px) {
+  #main-container h1 {
+    font-size: 60px;
+  }
+
+  #main-container h2 {
+    top: 57%;
+  }
+
+  #audio-player>.volume-button {
+    display: none;
+  }
+
+  #audio-player input {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  #main-container h2 {
+    top: 57%;
+    font-size: 12px;
+  }
+
+  #main-container h1 {
+    font-size: 50px;
+  }
+}

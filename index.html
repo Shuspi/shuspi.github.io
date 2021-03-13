@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Loading...</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta property="og:site_name" content="canichols">
+		<meta property="og:title" content="canichols">
+		<meta property="og:description" content="canichols">
+		<link rel="stylesheet" href="main.css">
+		<link rel="stylesheet" href="resources/css/audio-player.css">
+		<link rel="stylesheet" href="resources/css/discord-widget.css">
+		<link rel="stylesheet" href="resources/css/preloader.css">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+		<style media data-href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}table{border-collapse:collapse;border-spacing:0}</style>
+		<link rel="shortcut icon" href="resources/favicons/favicon.ico"/>
+		<link rel="icon" type="image/png" sizes="32x32" href="resources/favicons/favicon-16x16.png"/>
+		<link rel="icon" type="image/png" sizes="32x32" href="resources/favicons/favicon-32x32.png"/>
+	</head>
+
+	<body>
+		<div id="preloader">
+			<div id="preload-text"></div>
+		</div>
+
+		<div id="background-overlay"></div>
+
+		<div id="main-container">
+			<h1>canichols</h1>
+			<h2 id="text-status">Lmao | GAME: CS:GO | RANK: Guard Master 1</h2>
+			<a href="https://vk.com/canichols" target=_blank><i class="fab fa-vk"></i> VKontakte</a> /
+			<a href="https://steamcommunity.com/id/hshv/" target=_blank><i class="fab fa-steam"></i> Steam</a>
+		</div>
+
+		<div id="discord-widget">
+			<img src="resources/images/discord-logo.png"/>
+			<span>Discord: </span>
+			<span id="copy">Canichols#5016</span>
+		</div>
+
+		<audio id="audio"></audio>
+		<div id="audio-player">
+			<i onClick="togglePlay()" class="play-button fas fa-play"></i>
+			<i onclick="refresh()" class="refresh-button fas fa-forward"></i><br><br>
+			<i class="volume-button fas fa-volume-up"></i>
+			<input value="33" type="range" min="0" max="100" step="1" oninput="SetVolume(this.value)" onchange="SetVolume(this.value)"></input>
+		</div>
+
+		<video id="background" autoplay muted loop src=""></video>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+		<script src="resources/scripts/jquery.js"></script>
+		<script src="resources/scripts/audio-player.js"></script>
+		<script src="resources/scripts/background-randomizer.js"></script>
+		<script src="resources/scripts/discord-nickname-copy.js"></script>
+		<script src="resources/scripts/preloader-initialization.js"></script>
+		<script src="resources/scripts/title-animation.js"></script>
+	</body>
+</html>

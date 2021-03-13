@@ -1,0 +1,59 @@
+#discord-widget {
+  position: fixed;
+  right: 0;
+  top: 0;
+  padding: 5px;
+  margin: 10px;
+  width: max-content;
+  height: max-content;
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: 15px;
+  background: rgba(139, 157, 254, 0.7);
+  border-radius: 5px;
+  opacity: 0.6;
+  transition: opacity .3s;
+  z-index: 5;
+}
+
+#discord-widget:hover {
+  opacity: 1;
+  transition: opacity .3s;
+}
+
+#discord-widget span {
+  opacity: 0.8;
+}
+
+#discord-widget span#copy {
+  user-select: text;
+  cursor: pointer;
+  font-weight: 600;
+  transition: opacity .3s;
+}
+
+#discord span#copy:hover {
+  opacity: 1;
+}
+
+#discord-widget img {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  opacity: 0.7;
+}
+
+#copied {
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
+  padding: 4px;
+  width: 70px;
+  background: rgba(25, 25, 25, 0.85);
+  border: 1px solid #222;
+  border-radius: 4px;
+  color: #fff;
+  text-align: center;
+  opacity: 0;
+  z-index: 6;
+}
