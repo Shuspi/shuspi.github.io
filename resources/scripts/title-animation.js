@@ -5,5 +5,5 @@ setInterval(function()
 {
     emojicount++;
     if(emojicount > emojiarray.length - 1) emojicount = 0;
-    document.title = "Canichols " + emojiarray[emojicount];
+    document.title = "Shuspi " + emojiarray[emojicount];
 }, 1000);
