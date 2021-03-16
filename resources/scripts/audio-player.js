@@ -44,7 +44,8 @@ var audioArray =
 "resources/tracks/track-2.mp3",
 "resources/tracks/track-3.mp3",
 "resources/tracks/track-4.mp3",
-"resources/tracks/track-5.mp3"];
+"resources/tracks/track-5.mp3",
+"resources/tracks/track-6.mp3"];
 document.getElementById("audio").src = audioArray[Math.floor(Math.random() * audioArray.length)];
 var audio = document.getElementById("audio"),
     audioisPlaying = !1;
