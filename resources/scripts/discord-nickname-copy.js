@@ -22,7 +22,7 @@ var $ = jQuery.noConflict();
     document.execCommand("copy");
     window.getSelection().removeAllRanges();
 
-    var copied = $('<div id="copied">Copied</div>');
+    var copied = $('<div id="copied">Скопировано</div>');
     $(this).parent().append(copied);
     $(copied).animate({
         opacity: "1",
